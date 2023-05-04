@@ -17,7 +17,7 @@ tsc --init
  npm install
  ```
 - Criar a pasta src como arquivo index.ts
--Rodar o projeto:
+- Rodar o projeto:
 ```bash
 npm run dev
 
