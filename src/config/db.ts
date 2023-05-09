@@ -10,8 +10,9 @@ const DATABASE = process.env.DATABASE || "";
 const HOST = process.env.HOST || "localhost";
 
 const db = new DataSource({
-    url: "postgres://bchrsagk:vyvZo9UENfTEFMzEop2kCjIlWKTZTXPk@silly.db.elephantsql.com/bchrsagk",
-    type: "postgres",
+    //url: "postgres://bchrsagk:vyvZo9UENfTEFMzEop2kCjIlWKTZTXPk@silly.db.elephantsql.com/bchrsagk",
+    database: "bdAula.db",
+    type: "sqlite",
     synchronize: false, 
     logging: false,
     entities: ["src/entities/*.ts"],

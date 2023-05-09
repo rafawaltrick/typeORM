@@ -3,6 +3,7 @@ import {Request} from "express";
 import * as cors from 'cors';
 import * as dotenv from "dotenv"
 import db from "./config/db";
+import routes from "./routes";
 dotenv.config();
 
 const PORT = process.env.PORT || 3004
@@ -17,6 +18,7 @@ db.initialize().then(async(connection)=> {
 
 app.use(express.json());
 app.use(cors<Request>());
+app.use(routes)
 app.listen(PORT, () =>console.log(`Rodando na porta ${PORT}`));
 
 

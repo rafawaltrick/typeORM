@@ -1,7 +1,7 @@
 {
   "name": "typeorm",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Criação do ZERO:\r ```bash\r  npm init -y\r  ```\r - Criar projeto Type Script:\r ```bash\r tsc --init\r ```\r - Adicionado no package.json as dependencias\r - Instalar as dependências:\r ```bash\r  npm install\r  ```\r - Criar a pasta src como arquivo index.ts\r - Rodar o projeto:\r ```bash\r npm run dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,5 +28,13 @@
     "@types/pg": "^8.6.6",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafawaltrick/typeORM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafawaltrick/typeORM/issues"
+  },
+  "homepage": "https://github.com/rafawaltrick/typeORM#readme"
 }

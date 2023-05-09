@@ -53,6 +53,12 @@ class ServiceMatch{
         try{
             const host = await db.getRepository(Team).findOneBy({id:idhost});
             const visitor = await db.getRepository(Team).findOneBy({id:idvisitor});
+            if(!host){
+                throw "Mandante desconhecido";
+            }
+            if(!visitor){
+                throw "Visitante desconhecido";
+            }
             const match = new Match();
             match.host = host;
             match.visitor = visitor;
@@ -81,6 +87,7 @@ class ServiceMatch{
             return match;
         }catch(error){
             throw error;
+            
         }
     }
 
