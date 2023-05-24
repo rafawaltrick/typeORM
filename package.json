@@ -4,11 +4,12 @@
   "description": "- Criação do ZERO:\r ```bash\r  npm init -y\r  ```\r - Criar projeto Type Script:\r ```bash\r tsc --init\r ```\r - Adicionado no package.json as dependencias\r - Instalar as dependências:\r ```bash\r  npm install\r  ```\r - Criar a pasta src como arquivo index.ts\r - Rodar o projeto:\r ```bash\r npm run dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "dev": "ts-node-dev src/index.ts",
     "migration:generate": "typeorm-ts-node-commonjs -d ./src/config/db.ts migration:generate ./src/migrations/default",
     "migration:run": "typeorm-ts-node-commonjs -d ./src/config/db.ts migration:run",
-    "migration:revert": "typeorm-ts-node-commonjs -d ./src/config/db.ts migration:revert"
+    "migration:revert": "typeorm-ts-node-commonjs -d ./src/config/db.ts migration:revert",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -27,19 +28,10 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/pg": "^8.6.6",
-    "husky": "^8.0.3",
     "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "husky": "^8.0.0"
   },
-  
-  "husky": {
-    "hooks": {
-      "pre-commit": "Digite o ID da tesk", // seu comando vai aqui
-      "pre-push": "Verifique sua branch", // seu comando vai aqui
-      "...": "..."
-      }
-  },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rafawaltrick/typeORM.git"
@@ -49,4 +41,3 @@
   },
   "homepage": "https://github.com/rafawaltrick/typeORM#readme"
 }
-https://oieduardorabelo.medium.com/aplicando-padr%C3%B5es-de-c%C3%B3digo-com-pr%C3%A9-commit-hook-usando-husky-a72a51512a6d

@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "--> Verifique se o id da task foi colocado corretamente"
+npm test
