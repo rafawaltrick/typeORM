@@ -4,7 +4,7 @@
   "description": "- Criação do ZERO:\r ```bash\r  npm init -y\r  ```\r - Criar projeto Type Script:\r ```bash\r tsc --init\r ```\r - Adicionado no package.json as dependencias\r - Instalar as dependências:\r ```bash\r  npm install\r  ```\r - Criar a pasta src como arquivo index.ts\r - Rodar o projeto:\r ```bash\r npm run dev",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "echo teste",
     "dev": "ts-node-dev src/index.ts",
     "migration:generate": "typeorm-ts-node-commonjs -d ./src/config/db.ts migration:generate ./src/migrations/default",
     "migration:run": "typeorm-ts-node-commonjs -d ./src/config/db.ts migration:run",
