@@ -34,7 +34,7 @@
   
   "husky": {
     "hooks": {
-      "pre-commit": "Digite o ID da tesk", // seu comando vai aqui
+      "pre-commit": "Digite o ID da tesk", // seu comando vai aqui vamos ver se funciona
       "pre-push": "Verifique sua branch", // seu comando vai aqui
       "...": "..."
       }
